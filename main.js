@@ -10,17 +10,18 @@
 let outputArticle = document.querySelector(".output")
 let timeButton = document.createElement("button")
 timeButton.textContent = "Current Time"
+outputArticle.appendChild(timeButton)
 
 function myFunction() {
-var d = new Date();
-var n = d.getTime();
-outputArticle.innerHTML = d;
-console.log("n",n)
+    var d = new Date();
+    var n = d.getTime();
+    outputArticle.innerHTML = d;
 }
 timeButton.addEventListener("click", () => {
     console.log("button clicked")
     myFunction()
+    outputArticle.appendChild(timeButton)
     
     
 })
-outputArticle.appendChild(timeButton)
+// myFunction()
