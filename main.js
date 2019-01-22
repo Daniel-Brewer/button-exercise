@@ -19,6 +19,7 @@ console.log("n",n)
 }
 timeButton.addEventListener("click", () => {
     console.log("button clicked")
+    myFunction()
     
     
 })
